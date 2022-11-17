@@ -43,8 +43,8 @@ RUN a2enmod headers rewrite
 # starting a container. And we surely should not hard-code the values for the UID. 
 # Again, we have multiple options to accomplish this. The one we want to use here is an 
 # ENTRYPOINT command in our Dockerfile. So lets exchange the line
-COPY entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["entrypoint.sh"]
+# COPY entrypoint.sh /usr/local/bin/
+# ENTRYPOINT ["entrypoint.sh"]
 
 # Tell container to listen to port 80 at runtime
 EXPOSE 80
